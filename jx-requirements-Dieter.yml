@@ -3,30 +3,22 @@ autoUpdate:
   schedule: ""
 bootConfigURL: https://github.com/jenkins-x/jenkins-x-boot-config.git
 cluster:
-  clusterName: jenkinsx2
-  devEnvApprovers:
-  - vaatje
-  environmentGitOwner: cursusjenkinsx
-  environmentGitPublic: true
   gitKind: github
   gitName: github
   gitServer: https://github.com
+  environmentGitPublic: true
   namespace: jx
-  project: jenkinsx-testje
   provider: gke
-  registry: gcr.io
-  zone: europe-west1-b
 environments:
 - ingress:
-    domain: 34.79.233.80.nip.io
+    domain: ""
     externalDNS: false
-    namespaceSubDomain: -jx.
+    namespaceSubDomain: ""
     tls:
       email: ""
       enabled: false
       production: false
   key: dev
-  repository: environment-jenkinsx2-dev
 - ingress:
     domain: ""
     externalDNS: false
@@ -36,7 +28,6 @@ environments:
       enabled: false
       production: false
   key: staging
-  repository: environment-jenkinsx2-staging
 - ingress:
     domain: ""
     externalDNS: false
@@ -46,10 +37,9 @@ environments:
       enabled: false
       production: false
   key: production
-  repository: environment-jenkinsx2-production
 gitops: true
 ingress:
-  domain: 34.79.233.80.nip.io
+  domain: ""
   externalDNS: false
   namespaceSubDomain: -jx.
   tls:
