@@ -1,0 +1,7 @@
+dependencies:
+- host: github.com
+  owner: cursusjenkinsx
+  repo: hello-4-4
+  url: https://github.com/cursusjenkinsx/hello-4-4.git
+  version: ""
+  versionURL: ""
